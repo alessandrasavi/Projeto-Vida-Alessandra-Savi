@@ -22,13 +22,6 @@ const tempoObjetivo4 = new Date("2026-12-20T00:00:00");
 
 const tempos  = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
 
-let tempoAtual = new Date();
-
-contadores[0].textContent = calculaTempo(tempoObjetivo1);
-contadores[1].textContent = calculaTempo(tempoObjetivo2);
-contadores[2].textContent = calculaTempo(tempoObjetivo3);
-contadores[3].textContent = calculaTempo(tempoObjetivo4);
-
   function calculaTempo(tempoObjetivo){
     let tempoAtual = new Date();
     let tempoFinal = tempoObjetivo - tempoAtual;
@@ -42,4 +35,8 @@ contadores[3].textContent = calculaTempo(tempoObjetivo4);
     horas %= 24;
 
     return (dias + " dias; " + horas + " horas; " + minutos + " minutos; " + segundos + " segundos.")
+  }
+
+  function atualizaCronometro(){
+
   }
